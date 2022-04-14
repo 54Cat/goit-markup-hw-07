@@ -1,5 +1,4 @@
-@import "./reset";
-
+@import './reset';
 
 body {
   font-family: var(--primary-font);
@@ -32,4 +31,20 @@ textarea {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.current {
+  color: var(--accent-txt);
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-txt);
+  }
 }
