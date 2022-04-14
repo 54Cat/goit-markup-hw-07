@@ -1,0 +1,23 @@
+//variables
+@import './variables/variables';
+
+//base
+@import './base/base';
+
+//utis
+@import './utils/visually-hidden';
+
+//components
+@import './components/container';
+@import './components/btn';
+@import './components/form/modal';
+
+@import './components/header';
+@import './components/hero';
+@import './components/advantage';
+@import './components/workboard';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
+@import './components/portfolio/portfolio';
