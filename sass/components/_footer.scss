@@ -92,6 +92,12 @@
   transition-property: background;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-icon-bg);
+    opacity: 1;
+  }
 }
 
 .footer-social-icon {
@@ -103,12 +109,6 @@
   transition-property: background-color;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--hover-icon-bg);
-  opacity: 1;
 }
 
 .form {
@@ -149,10 +149,10 @@
   min-height: 50px;
   padding: 15px;
   color: rgba(255, 255, 255, 0.6);
-}
 
-.form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .submit-btn {

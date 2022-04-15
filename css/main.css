@@ -92,22 +92,6 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.current {
-  color: var(--accent-txt);
-}
-
-.current::after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-txt);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -449,6 +433,22 @@ textarea {
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.current {
+  color: var(--accent-txt);
+}
+
+.current::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-txt);
 }
 
 .order {

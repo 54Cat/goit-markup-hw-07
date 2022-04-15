@@ -1,19 +1,18 @@
 .team {
   background-color: var(--third-bg);
 
-  &-list {
-    display: flex;
-  }
+.team-list {
+  display: flex;
+}
 
-  &-item {
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--primary-bg);
-  }
+.team-item {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-bg);
 
-  &-item:last-child {
+  &:last-child {
     margin-right: 0;
   }
 }
@@ -47,10 +46,10 @@
 
 .social-item {
   margin-right: 10px;
-}
 
-.social-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-link {
@@ -65,6 +64,11 @@
   transition-property: background-color;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-icon-bg);
+  }
 }
 
 .social-icon {
@@ -80,9 +84,4 @@
 .social-link:hover .social-icon,
 .social-icon:focus .social-icon {
   fill: var(--accent-icon);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--hover-icon-bg);
 }

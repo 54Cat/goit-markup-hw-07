@@ -15,14 +15,14 @@
   cursor: pointer;
 
   transition-property: background-color;
-  transition-duration: var(--time-duration);transition-timing-function: var(--time-fun);
-}
+  transition-duration: var(--time-duration);
+  transition-timing-function: var(--time-fun);
 
-.main-btn:hover,
-.main-btn:focus {
-  background-color: var(--hover-main-btn-bg);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-main-btn-bg);
+  }
 }
-
 
 .submit-btn-modal {
   width: 200px;
@@ -43,13 +43,13 @@
   margin-right: auto;
   cursor: pointer;
   border: none;
- 
+
   transition-property: background-color, box-shadow;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
-}
 
-.submit-btn-modal:hover,
-.submit-btn-modal:focus {
-  background: var(--hover-main-btn-bg);
+  &:hover,
+  &:focus {
+    background: var(--hover-main-btn-bg);
+  }
 }

@@ -8,12 +8,12 @@
   transition-property: opacity, visibility;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
+}
 
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -49,15 +49,15 @@
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
 
-  &-icon {
-    height: 18px;
-    width: 18px;
-  }
-
-  &:hover &-icon,
-  &:focus &-icon {
+  &:hover .exit-btn-icon,
+  &:focus .exit-btn-icon {
     fill: var(--hover-icon-bg);
   }
+}
+
+.exit-btn-icon {
+  height: 18px;
+  width: 18px;
 }
 
 .text-modal {
@@ -75,6 +75,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &:focus-within > .icon-mod {
+    fill: var(--hover-icon-bg);
+  }
+
+  &:focus-within > .form-input-modal {
+    border: 1px solid var(--main-btn-bg);
+  }
 }
 
 .label-text-modal {
@@ -108,12 +116,4 @@
   transition-property: border-color;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
-}
-
-.form-label-modal:focus-within > .icon-mod {
-  fill: var(--hover-icon-bg);
-}
-
-.form-label-modal:focus-within > .form-input-modal {
-  border: 1px solid var(--main-btn-bg);
 }
