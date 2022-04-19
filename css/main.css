@@ -30,6 +30,19 @@
   --time-fun: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -92,19 +105,6 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -133,8 +133,7 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.main-btn:hover,
-.main-btn:focus {
+.main-btn:hover, .main-btn:focus {
   background-color: var(--hover-main-btn-bg);
 }
 
@@ -162,8 +161,7 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.submit-btn-modal:hover,
-.submit-btn-modal:focus {
+.submit-btn-modal:hover, .submit-btn-modal:focus {
   background: var(--hover-main-btn-bg);
 }
 
@@ -218,14 +216,14 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.exit-btn-icon {
-  height: 18px;
-  width: 18px;
-}
-
 .exit-btn:hover .exit-btn-icon,
 .exit-btn:focus .exit-btn-icon {
   fill: var(--hover-icon-bg);
+}
+
+.exit-btn-icon {
+  height: 18px;
+  width: 18px;
 }
 
 .text-modal {
@@ -243,6 +241,14 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.form-label-modal:focus-within > .icon-mod {
+  fill: var(--hover-icon-bg);
+}
+
+.form-label-modal:focus-within > .form-input-modal {
+  border: 1px solid var(--main-btn-bg);
 }
 
 .label-text-modal {
@@ -275,14 +281,6 @@ textarea {
   transition-property: border-color;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
-}
-
-.form-label-modal:focus-within > .icon-mod {
-  fill: var(--hover-icon-bg);
-}
-
-.form-label-modal:focus-within > .form-input-modal {
-  border: 1px solid var(--main-btn-bg);
 }
 
 .form-input-modal.textarea {
@@ -624,6 +622,10 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
+.social-link:hover, .social-link:focus {
+  background-color: var(--hover-icon-bg);
+}
+
 .social-icon {
   width: 22px;
   height: 22px;
@@ -636,11 +638,6 @@ textarea {
 .social-link:hover .social-icon,
 .social-icon:focus .social-icon {
   fill: var(--accent-icon);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--hover-icon-bg);
 }
 
 .clients-list {
@@ -668,8 +665,7 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-item:hover, .clients-item:focus {
   border-color: var(--hover-icon-bg);
 }
 
@@ -687,13 +683,12 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.clients-logo-icon {
-  color: currentColor;
+.clients-link:focus, .clients-link:hover {
+  fill: var(--hover-icon-bg);
 }
 
-.clients-link:focus,
-.clients-link:hover {
-  fill: var(--hover-icon-bg);
+.clients-logo-icon {
+  color: currentColor;
 }
 
 .footer {
@@ -790,6 +785,11 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
+.footer-social-link:hover, .footer-social-link:focus {
+  background-color: var(--hover-icon-bg);
+  opacity: 1;
+}
+
 .footer-social-icon {
   width: 22px;
   height: 22px;
@@ -798,12 +798,6 @@ textarea {
   transition-property: background-color;
   transition-duration: var(--time-duration);
   transition-timing-function: var(--time-fun);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--hover-icon-bg);
-  opacity: 1;
 }
 
 .form {
@@ -955,8 +949,7 @@ textarea {
   transition-timing-function: var(--time-fun);
 }
 
-.works-link:hover,
-.works-link:focus {
+.works-link:hover, .works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

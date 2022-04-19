@@ -1,11 +1,9 @@
-//variables
-@import './variables/variables';
+//utis
+@import './utils/variables';
+@import './utils/visually-hidden';
 
 //base
 @import './base/base';
-
-//utis
-@import './utils/visually-hidden';
 
 //components
 @import './components/container';
